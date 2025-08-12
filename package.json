@@ -1,5 +1,5 @@
 {
-	"name": "@rebelstack-io/strog",
+	"name": "@stedion/strog",
 	"version": "1.0.0",
 	"description": "A structured logging library that enables rich runtime metadata tagging using tagged template strings",
 	"type": "module",
