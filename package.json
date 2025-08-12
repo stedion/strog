@@ -40,12 +40,12 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/rebelstackio/strog.git"
+		"url": "git+https://github.com/stedion/strog.git"
 	},
 	"bugs": {
-		"url": "https://github.com/rebelstackio/strog/issues"
+		"url": "https://github.com/stedion/strog/issues"
 	},
-	"homepage": "https://github.com/rebelstackio/strog#readme",
+	"homepage": "https://github.com/stedion/strog#readme",
 	"devDependencies": {
 		"@types/node": "^24.2.1",
 		"tsx": "^4.20.3",
