@@ -1,6 +1,6 @@
 {
 	"name": "@stedion/strog",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "A structured logging library that enables rich runtime metadata tagging using tagged template strings",
 	"type": "module",
 	"main": "./dist/index.js",
@@ -19,8 +19,9 @@
 	],
 	"scripts": {
 		"build": "tsc",
-		"test": "node --test --import=tsx tests/index.test.ts",
-		"test:watch": "node --test --watch --import=tsx tests/index.test.ts",
+		"test": "node --test --import=tsx \"tests/unit/**/*.test.ts\"",
+		"test:watch": "node --test --watch --import=tsx \"tests/unit/**/*.test.ts\"",
+		"coverage": "c8 --reporter=text --reporter=lcov npm test",
 		"clean": "rm -rf dist",
 		"prepublishOnly": "npm run clean && npm run build && npm test",
 		"dev": "tsc --watch",
@@ -42,12 +43,16 @@
 		"type": "git",
 		"url": "git+https://github.com/stedion/strog.git"
 	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com"
+	},
 	"bugs": {
 		"url": "https://github.com/stedion/strog/issues"
 	},
 	"homepage": "https://github.com/stedion/strog#readme",
 	"devDependencies": {
 		"@types/node": "^24.2.1",
+		"c8": "^9.1.0",
 		"tsx": "^4.20.3",
 		"typescript": "^5.9.2"
 	},
