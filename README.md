@@ -214,6 +214,3 @@ if ( parsed.metadata ) {
 - Up to 4095 children per node; overflow path can be detected (future handling)
 - Separate `attr` / `end` nodes: immutable append-only model; no retroactive mutation
 
-## License
-
-MIT
